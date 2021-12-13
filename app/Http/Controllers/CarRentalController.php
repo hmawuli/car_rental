@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class CarRentalController extends Controller
 {
     public function index(){
-        $admin = admin::all();
+        //$admin = admin::all();
     }
 
    public function create(){
@@ -33,7 +33,7 @@ class CarRentalController extends Controller
    }
 
    public function destroy($id){
-       
+
    }
 
 }
