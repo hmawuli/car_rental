@@ -2,12 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Inertia\Inertia;
 use Illuminate\Http\Request;
+use Inertia\Inertia;
 
-class CarRentalController extends Controller
+class AdminController extends Controller
 {
-
     public function about(Request $request)
     {
         return Inertia::render('About');
@@ -17,11 +16,23 @@ class CarRentalController extends Controller
     {
         return Inertia::render('Home');
     }
+    public function admin(Request $request)
+    {
+        return Inertia::render('Admin');
+    }
     public function carimage(Request $request)
     {
         return Inertia::render('CarImage');
     }
 
+    public function carowner(Request $request)
+    {
+        return Inertia::render('Carowner');
+    }
+    public function carownercredential(Request $request)
+    {
+        return Inertia::render('CarOwnerCredential');
+    }
     public function carrental(Request $request)
     {
         return Inertia::render('CarRental');
@@ -42,5 +53,8 @@ class CarRentalController extends Controller
     {
         return Inertia::render('CustomerCredential');
     }
-
+    public function payment(Request $request)
+    {
+        return Inertia::render('Payment');
+    }
 }
