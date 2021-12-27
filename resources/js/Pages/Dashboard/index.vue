@@ -1,7 +1,6 @@
 <template>
     <div>
 
-    <p>This is Dashboard, Welcome {{fname}},{{lname}}</p>
 
 
     </div>
@@ -10,6 +9,6 @@
 
 <script>
     export default{
-        props:['fname','lname']
+
     }
 </script>

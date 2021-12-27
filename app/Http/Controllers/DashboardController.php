@@ -8,10 +8,7 @@ use Inertia\Inertia;
 class DashboardController extends Controller
 {
     public function index(){
-        $data = [
-            'fname' => 'benz',
-             'lname' => 'toyota',
-        ];
-        return Inertia::render('Dashboard/Index', $data);
+
+        return Inertia::render('Dashboard/Index', );
     }
 }
