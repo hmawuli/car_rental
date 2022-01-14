@@ -2,13 +2,14 @@
 
 use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Auth;
+use Illuminate\Support\Facades\Auth;
+
+use Illuminate\Http\Request;
 
 
-
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+  //return view('welcome');
+//});
 
 Route::get('Dashboard', [DashboardController::class, 'index']);
 
@@ -45,3 +46,7 @@ Route::get('/carreview', [App\Http\Controllers\AdminController::class, 'carrevie
 Route::get('/customer', [App\Http\Controllers\AdminController::class, 'customer']);
 Route::get('/customercredential', [App\Http\Controllers\AdminController::class, 'customercredential']);
 Route::get('/payment', [App\Http\Controllers\AdminController::class, 'payment']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

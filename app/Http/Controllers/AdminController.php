@@ -8,7 +8,9 @@ use Inertia\Inertia;
 class AdminController extends Controller
 {
     public function about(Request $request)
+
     {
+        
         return Inertia::render('About');
     }
 
