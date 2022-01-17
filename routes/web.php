@@ -2,16 +2,19 @@
 
 use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Auth;
-
+use App\Http\Controllers\AdminController;
+//use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\HomeController;
+use Illuminate\Auth;
 use Illuminate\Http\Request;
 
 
-//Route::get('/', function () {
-  //return view('welcome');
-//});
 
-Route::get('Dashboard', [DashboardController::class, 'index']);
+Route::get('/', function () {
+  return view('welcome');
+});
+
+Route::get('dashboard', [DashboardController::class, 'index']);
 
 //the customers home pages
 Route::get('/cars', [App\Http\Controllers\HomeController::class, 'index'])->name('cars');
@@ -47,6 +50,6 @@ Route::get('/customer', [App\Http\Controllers\AdminController::class, 'customer'
 Route::get('/customercredential', [App\Http\Controllers\AdminController::class, 'customercredential']);
 Route::get('/payment', [App\Http\Controllers\AdminController::class, 'payment']);
 
-Auth::routes();
+//Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
