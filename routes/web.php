@@ -3,9 +3,9 @@
 use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
-//use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\HomeController;
-use Illuminate\Auth;
+//use Illuminate\Auth;
 use Illuminate\Http\Request;
 
 
@@ -51,5 +51,13 @@ Route::get('/customercredential', [App\Http\Controllers\AdminController::class, 
 Route::get('/payment', [App\Http\Controllers\AdminController::class, 'payment']);
 
 //Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+//Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
