@@ -8,9 +8,9 @@ use Inertia\Inertia;
 
 class CustomerController extends Controller
 {
-    public function show(customer $customer)
+    public function customer(customer $customer)
     {
-        return Inertia::render('customer/show',[
+        return Inertia::render('customer',[
             'customer' => $customer->only(
                 'id',
                 'customer_name',
