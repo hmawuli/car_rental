@@ -54,10 +54,9 @@ Route::get('/payment', [App\Http\Controllers\AdminController::class, 'payment'])
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-//Auth::routes();
+Auth::routes();
 
 Route::post('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-//Auth::routes();
-
-//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Auth::routes();
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
