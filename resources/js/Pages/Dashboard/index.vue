@@ -2,7 +2,7 @@
     <div>
 
 
-
+        <inertia-link href="/payment"> go to the payment page</inertia-link>
     </div>
 
 </template>

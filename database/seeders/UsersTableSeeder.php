@@ -1,9 +1,10 @@
 <?php
 
 namespace Database\Seeders;
-use Illuminate\Support\Facades\DB;
+//use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Seeder;
-use App\Http\Database\Seeder\user;
+use App\Models\User;
+
 class UsersTableSeeder extends Seeder
 {
     /**
@@ -13,8 +14,10 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        user::create([
-
+        User::create([
+            'name' => '',
+            'email' => '',
+            'password' => bcrypt('password'),
 
         ]);
     }
