@@ -10,53 +10,53 @@ class AdminController extends Controller
     public function about(Request $request)
 
     {
-        
-        return Inertia::render('About');
+
+        return Inertia::render('about');
     }
 
     public function home(Request $request)
     {
-        return Inertia::render('Home');
+        return Inertia::render('home');
     }
     public function admin(Request $request)
     {
-        return Inertia::render('Admin');
+        return Inertia::render('admin');
     }
     public function carimage(Request $request)
     {
-        return Inertia::render('CarImage');
+        return Inertia::render('carImage');
     }
 
     public function carowner(Request $request)
     {
-        return Inertia::render('Carowner');
+        return Inertia::render('carowner');
     }
     public function carownercredential(Request $request)
     {
-        return Inertia::render('CarOwnerCredential');
+        return Inertia::render('carOwnerCredential');
     }
     public function carrental(Request $request)
     {
-        return Inertia::render('CarRental');
+        return Inertia::render('carRental');
     }
     public function carreview(Request $request)
     {
-        return Inertia::render('CarReview');
+        return Inertia::render('carReview');
     }
     public function cars(Request $request)
     {
-        return Inertia::render('Cars');
+        return Inertia::render('cars');
     }
     public function customer(Request $request)
     {
-        return Inertia::render('Customer');
+        return Inertia::render('customer');
     }
     public function customercredential(Request $request)
     {
-        return Inertia::render('CustomerCredential');
+        return Inertia::render('customerCredential');
     }
     public function payment(Request $request)
     {
-        return Inertia::render('Payment');
+        return Inertia::render('payment');
     }
 }
