@@ -5343,7 +5343,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-Object(function webpackMissingModule() { var e = new Error("Cannot find module '../Shared/Layout.vue'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 //
 //
 //
@@ -5354,10 +5353,10 @@ Object(function webpackMissingModule() { var e = new Error("Cannot find module '
 //
 //
 //
-
+//import Layout from "../Shared/Layout.vue";
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  layout: Object(function webpackMissingModule() { var e = new Error("Cannot find module '../Shared/Layout.vue'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()),
-  components: Object(function webpackMissingModule() { var e = new Error("Cannot find module '../Shared/Layout.vue'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
+  layout: Layout,
+  components: Layout
 });
 
 /***/ }),
